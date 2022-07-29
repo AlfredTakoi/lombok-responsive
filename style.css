@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Style */
+
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.line {
+  width: 60px;
+  border: 4px solid #79948f;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.line-small {
+  width: 60px;
+  border: 2px solid #494e48;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* Header */
+header {
+  width: 98%;
+  height: 100vh;
+  background-image: url("/img/leaf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #494e48;
+  margin: 10px;
+}
+header .navigation {
+  justify-content: space-between;
+  position: relative;
+  height: 80px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header .navigation ul {
+  list-style: none;
+  justify-content: space-between;
+  width: 35%;
+}
+
+header .navigation ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+}
+
+header .navigation ul li {
+  padding: 12px 30px;
+}
+
+header .navigation ul .active {
+  border: 2px solid #494e48;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #79948f;
+  margin: 2px 0px;
+  border-radius: 3px;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.hero .hero-content {
+  height: 80vh;
+  text-transform: uppercase;
+  flex-direction: column;
+  text-align: center;
+}
+.hero .hero-content .hero-title {
+  margin: auto;
+  letter-spacing: 7px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-content .hero-title h1 {
+  font-size: 90px;
+  margin: 20px 0px;
+}
+
+/* Article Section */
+.article {
+  width: 100%;
+  background-color: #f2f4f1;
+  padding: 50px 0px;
+  padding-bottom: 200px;
+}
+
+.article .article-title {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.article .article-title h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #494e48;
+}
+
+.article .article-body {
+  justify-content: space-between;
+}
+
+.article .article-body .card {
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  margin-bottom: 15px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.article .article-body .card .image-box {
+  width: 100%;
+  height: 50%;
+}
+
+.article .article-body .card .image-box img {
+  width: 400px;
+}
+
+.article .article-body .card .card-body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 60px 0px;
+}
+
+.article .article-body .card .card-body p {
+  line-height: 30px;
+  color: #494e48;
+}
+
+/* Section About */
+.about .about-image img {
+  width: 700px;
+  height: inherit;
+  object-fit: cover;
+}
+
+.about .about-content .about-body {
+  width: 50%;
+  margin: auto;
+  padding: 0px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.about .about-content .about-body h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #494e48;
+}
+.about .about-content .about-body p {
+  text-align: justify;
+  line-height: 25px;
+  padding: 0px 15px;
+  color: #aeaeae;
+}
+
+.about .about-content .about-image {
+  width: 50%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.about .about-content .about-body div {
+  margin-bottom: 50px;
+}
+
+/* Section Subscribe */
+.subscribe {
+  width: 100%;
+  height: 80vh;
+  background-color: #dfe4de;
+  color: #494e48;
+}
+
+.subscribe .subscribe-content {
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  line-height: 50px;
+}
+
+.subscribe .subscribe-content h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.subscribe .subscribe-content p {
+  font-size: 25px;
+  letter-spacing: 1px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.subscribe .subscribe-content .form-control {
+  width: 500px;
+  height: 60px;
+  border: none;
+  margin-bottom: 40px;
+  padding: 0px 30px;
+  background-color: #eff1ee;
+  border: 4px solid white;
+}
+
+.subscribe .subscribe-content .btn-primary {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #494e48;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.subscribe .subscribe-content .btn-primary:hover {
+  background-color: #494e48;
+  color: #dfe4de;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 20vh;
+}
+
+footer .footer-content {
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  text-transform: uppercase;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer .footer-content ul li a {
+  text-decoration: none;
+  color: #494e48;
+  font-weight: bold;
+}
+footer .footer-content .icon-sosmed {
+  width: 12%;
+  justify-content: space-between;
+}
+
+footer .footer-content .icon-sosmed span {
+  width: 35px;
+  height: 35px;
+  background-color: #494e48;
+  border-radius: 50%;
+  color: #dfe4de;
+  transition: all .2s ease-in-out;
+}
+
+footer .footer-content .icon-sosmed span:hover{
+  background-color: transparent;
+  color: #494e48;
+  border: 2px solid #494e48;
+  cursor: pointer;
+}
+
+footer .footer-content .icon-sosmed span i {
+  margin: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* Header */
+  header {
+    background-position: center;
+    margin: 12px;
+    width: 94%;
+  }
+  header .navigation h1 {
+    visibility: hidden;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .navigation ul {
+    display: none;
+  }
+  .hero .hero-content .hero-title h1 {
+    font-size: 40px;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+  }
+
+  .hero .hero-content .hero-title h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  .hero .hero-content .hero-title h3::after {
+    content: " & more";
+  }
+
+  /* Section Article */
+  .article {
+    padding-bottom:50px;
+  }
+  .article .article-title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .article .article-body .card {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+  }
+
+  .article .article-body {
+    flex-direction: column;
+  }
+
+  .article .article-body .card .image-box {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .article .article-body .card .image-box img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .article .article-body .card .card-body {
+    font-size: 20px;
+    padding: 30px 0px;
+  }
+
+  /* Section About */
+  .about {
+    width: 100%;
+    height: 130vh;
+    color: #494e48;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+  }
+
+  .about .about-content .about-image {
+    width: 100%;
+    height: 220px;
+    background-color: black;
+  }
+
+  .about .about-content .about-image img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .about .about-content .about-body {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .about .about-content .about-body h1 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  /* Section Susbcribe */
+  .subscribe .subscribe-content p {
+    width: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .subscribe .subscribe-content .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .subscribe .subscribe-content .btn-primary {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    height: 60vh;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  footer .footer-content ul {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    letter-spacing: 5px;
+    width: 100%;
+  }
+  footer .footer-content .icon-sosmed {
+    width: 60%;
+  }
+}
